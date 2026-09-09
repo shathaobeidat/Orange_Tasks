@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Bali Escape</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the beauty of Bali with Bali Escape. Discover destinations, travel information, hotels, flights, and travel packages.">
+    <meta name="keywords"
+        content="Bali, Bali Escape, Bali travel, Bali tourism, Indonesia, travel booking, Bali vacation">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+
+<body>
+
+    <header>
+
+        <h1> Travel Booking</h1>
+
+        <p>
+            Complete the form below to reserve your unforgettable
+            <strong>Bali Escape</strong>.
+        </p>
+
+
+    </header>
+
+    <hr>
+
+   
+    <main>
+
+        <section>
+
+            <h2>Travel Reservation Form</h2>
+
+            <p>
+                Please enter your information and select your preferred
+                travel options.
+            </p>
+
+            <form action="booking.html"
+                  method="post"
+                  target="_self"
+                  autocomplete="on">
+
+          
+                <fieldset>
+
+                    <legend>Personal Information</legend>
+
+                    <p>
+                        <label for="full-name">
+                            Full Name:
+                        </label>
+                        <br>
+
+                        <input type="text"
+                               id="full-name"
+                               name="full_name"
+                            
+                               placeholder="Enter your full name"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="email">
+                            Email Address:
+                        </label>
+                        <br>
+
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               placeholder="example@email.com"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="password">
+                            Password:
+                        </label>
+                        <br>
+
+                        <input type="password"
+                               id="password"
+                               name="password"
+                               placeholder="Enter your password"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="phone">
+                            Phone Number:
+                        </label>
+                        <br>
+
+                        <input type="tel"
+                               id="phone"
+                               name="phone"
+                        
+                               placeholder="+962 7XXXXXXXX"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="dob">
+                            Date of Birth:
+                        </label>
+                        <br>
+
+                        <input type="date"
+                               id="dob"
+                               name="date_of_birth"
+                               required>
+                    </p>
+
+                </fieldset>
+
+                <br>
+
+
+                <fieldset>
+
+                    <legend>Travel Details & Selection</legend>
+
+                    <p>
+                        <label for="departure-city">
+                            Departure City:
+                        </label>
+                        <br>
+
+                        <input type="text"
+                               id="departure-city"
+                               name="departure_city"
+                             
+                               placeholder="Enter your departure city"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="destination">
+                            Destination:
+                        </label>
+                        <br>
+
+                        <select id="destination"
+                                name="destination"
+                                required>
+
+                            <option value="">
+                                -- Select a destination --
+                            </option>
+
+                            <optgroup label="Asia">
+
+                                <option value="bali">
+                                    Bali, Indonesia
+                                </option>
+
+                                <option value="tokyo">
+                                    Tokyo, Japan
+                                </option>
+
+                                <option value="bangkok">
+                                    Bangkok, Thailand
+                                </option>
+
+                            </optgroup>
+
+                            <optgroup label="Europe">
+
+                                <option value="paris">
+                                    Paris, France
+                                </option>
+
+                                <option value="rome">
+                                    Rome, Italy
+                                </option>
+
+                            </optgroup>
+
+                            <optgroup label="Middle East">
+
+                                <option value="dubai">
+                                    Dubai, UAE
+                                </option>
+
+                                <option value="amman">
+                                    Amman, Jordan
+                                </option>
+
+                            </optgroup>
+
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="travel-date">
+                            Travel Date:
+                        </label>
+                        <br>
+
+                        <input type="date"
+                               id="travel-date"
+                               name="travel_date"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="travelers">
+                            Number of Travelers:
+                        </label>
+                        <br>
+
+                        <input type="number"
+                               id="travelers"
+                               name="number_of_travelers"
+                
+                               value="1"
+                               required>
+                    </p>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+
+                    <legend>Travel Class</legend>
+
+                    <p>
+                        <input type="radio"
+                               id="economy"
+                               name="travel_class"
+                               value="economy"
+                               checked
+                               required>
+
+                        <label for="economy">
+                            Economy
+                        </label>
+                    </p>
+
+                    <p>
+                        <input type="radio"
+                               id="business"
+                               name="travel_class"
+                               value="business">
+
+                        <label for="business">
+                            Business
+                        </label>
+                    </p>
+
+                    <p>
+                        <input type="radio"
+                               id="first-class"
+                               name="travel_class"
+                               value="first-class">
+
+                        <label for="first-class">
+                            First Class
+                        </label>
+                    </p>
+
+                </fieldset>
+
+                <br>
+
+           
+                <fieldset>
+
+                    <legend>Additional Services</legend>
+
+                    <p>
+                        <input type="checkbox"
+                               id="airport-transfer"
+                               name="services"
+                               value="airport-transfer">
+
+                        <label for="airport-transfer">
+                            Airport Transfer
+                        </label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox"
+                               id="hotel"
+                               name="services"
+                               value="hotel-reservation">
+
+                        <label for="hotel">
+                            Hotel Reservation
+                        </label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox"
+                               id="insurance"
+                               name="services"
+                               value="travel-insurance">
+
+                        <label for="insurance">
+                            Travel Insurance
+                        </label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox"
+                               id="guided-tour"
+                               name="services"
+                               value="guided-tour">
+
+                        <label for="guided-tour">
+                            Guided Tour
+                        </label>
+                    </p>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+
+                    <legend>Advanced Booking Options</legend>
+
+              
+                    <p>
+                        <label for="requests">
+                            Special Requests:
+                        </label>
+                        <br>
+
+                        <textarea id="requests"
+                                  name="special_requests"
+                                
+                                  placeholder="Enter any special requests or additional information..."></textarea>
+                    </p>
+
+               
+                    <p>
+                        <label for="documents">
+                            Upload Travel Documents:
+                        </label>
+                        <br>
+
+                        <input type="file"
+                               id="documents"
+                               name="documents"
+                               multiple
+                               required>
+                    </p>
+
+                  
+                    <p>
+                        <label for="package">
+                            Preferred Package:
+                        </label>
+                        <br>
+
+                        <input type="search"
+                               id="package"
+                               name="preferred_package"
+                               list="packages"
+                               size="40"
+                               maxlength="50"
+                               placeholder="Search or select a package"
+                               required>
+
+                        <datalist id="packages">
+
+                            <option value="Standard">
+                            <option value="Premium">
+                            <option value="Luxury">
+
+                        </datalist>
+
+                    </p>
+
+               
+                    <p>
+                        <label for="booking-reference">
+                            Booking Reference:
+                        </label>
+                        <br>
+
+                        <input type="text"
+                               id="booking-reference"
+                               name="booking_reference"
+                               value="BALI-2027-001"
+                               readonly
+                               size="25">
+                    </p>
+
+            
+                    <p>
+                        <label for="discount">
+                            Promotional Discount:
+                        </label>
+                        <br>
+
+                        <input type="text"
+                               id="discount"
+                               name="promotional_discount"
+                               value="10% OFF"
+                               disabled
+                               size="25">
+                    </p>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+
+                    <legend>Submit Booking</legend>
+
+                    <p>
+                        <input type="submit"
+                               value="Submit Booking">
+
+                        <input type="reset"
+                               value="Clear Form">
+                    </p>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+
+        <p>
+            &copy; 2027 Bali Escape. All rights reserved.
+        </p>
+
+    
+
+    </footer>
+
+</body>
+
+</html>
