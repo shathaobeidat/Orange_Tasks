@@ -1,0 +1,306 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf7;
+    color: #333;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #b86b77;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #b86b77;
+}
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    gap: 40px;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: #8f4f5c;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #b86b77;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #8f4f5c;
+}
+
+.hero-image {
+    width: 45%;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.purpose {
+    background-color: #f6e8e5;
+    text-align: center;
+    padding: 70px 15%;
+}
+
+.purpose h2 {
+    color: #8f4f5c;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.purpose p {
+    font-size: 18px;
+}
+
+.services {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.services h2 {
+    color: #8f4f5c;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #8f4f5c;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: #b86b77;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.community {
+    background-color: #f6e8e5;
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.community h2 {
+    color: #8f4f5c;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.community-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.community-content div {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 40%;
+}
+
+.community-content h3 {
+    color: #8f4f5c;
+    margin-bottom: 10px;
+}
+
+.contact {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #8f4f5c;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+form textarea {
+    height: 120px;
+    resize: none;
+}
+
+form button {
+    background-color: #b86b77;
+    color: white;
+    border: none;
+    padding: 13px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #8f4f5c;
+}
+
+footer {
+    background-color: #8f4f5c;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .community-content {
+        flex-direction: column;
+    }
+
+    .community-content div {
+        width: 100%;
+    }
+}
+
