@@ -1,0 +1,171 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+body{
+font-family: Arial, sans-serif;
+background-color: #fffaf7;
+color: #333;
+    line-height: 1.6 ;
+}
+#logo{
+    font-weight: bold;
+    font-size: 28px;
+    color: #b86b77;
+    margin-left:20px;
+}
+
+header{
+    display: flex;
+       justify-content: space-between;
+       background-color: white;
+       height:60px;
+       align-items: center;
+       padding: 30px;
+   
+}
+nav a{
+    text-decoration: none;
+    color: #333;
+    margin:0px 10px;
+}
+
+nav a:hover  {
+  color: #b86b77;
+}
+
+.btn {
+  display: inline-block;
+    background-color: #8e3c48;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top:  30px;
+    margin-left: 20%;
+}
+.btn:hover {
+    background-color: #200505;
+}
+
+.btn2{
+   background-color: #631a25;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.btn2 a{
+    text-decoration: none;
+    color: #f8dbdb;
+    font-weight: bold;
+    
+}
+ .btn2:hover{
+      background-color: #200505;
+
+    }
+
+ 
+.hero {
+       
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     gap: 40px;
+  
+}
+.hero-txt{
+    width:50%;
+}
+.hero-txt h1{
+       color: #ae5d5d;
+       
+       font-size: 48px;
+       margin-left: 40px;
+}
+.hero-txt p{
+    max-width: 500px;
+    font-size: 28px;
+     margin-left: 80px;
+
+}
+.hero-img {
+    width: 45%;
+}
+.hero-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.purpos{
+    background-color: #ffece7;
+  text-align: center;
+  
+}
+.purpos h2{
+     color: #5e1d27;
+     margin-bottom: 20px;
+}
+.purpos p{
+  
+       font-size: 18px;
+}
+.services-txt{
+    align-items: center;
+    text-align: center;
+}
+
+
+.services-txt h4{
+     color: #b24051;
+
+}
+.services-txt h3{
+     color: #5e1d27;
+     
+}
+.cards-sec {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    max-width: 1200px;
+    margin: 0 auto;   
+}
+.cards {
+    background-color: #f7bbbb;
+    padding: 20px;     
+    text-align: center;
+    border-radius: 8px; 
+    margin: 20px;;
+}
+
+.community{
+   background-color: #ffece7;
+  text-align: center;
+margin-bottom: 30px;}
+
+  .community h4{
+   color: #6b2d45;
+  }
+  .community h2{
+   color: #801e44;
+  }
+  .community p{
+   margin-bottom: 10px;
+  }
+  .contact{
+   background-color: #ffece7;
+  text-align: center;}
+
+  .contact h4{
+   color: #6b2d45;
+  }
+  .contact h3{
+   color: #801e44;
+  }
+
+  .contact p{
+   margin-bottom: 10px;
+  }
