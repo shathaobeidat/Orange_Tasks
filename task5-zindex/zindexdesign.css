@@ -231,14 +231,13 @@ body {
     border: 1px solid black;
     padding: 5px 12px;
     font-weight: bold;
-    cursor: pointer;
+
 }
 
 .part7 .overlay-cards {
     position: absolute;
     bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
+left:170px;
     display: flex;
     gap: 20px;
 }
