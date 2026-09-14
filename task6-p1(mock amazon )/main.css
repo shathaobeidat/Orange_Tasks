@@ -1,52 +1,230 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: white;
-}
 
-.header {
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #c88bd7;
+    }
+
+    
+    .navbar {
+      background-color: #131921;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 15px;
+      gap: 15px;
+    }
+
+   
+    .nav-logo {
+      padding: 5px;
+     
+    }
+
+    .nav-logo img {
+      width: 100px;
+      margin-top: 5px;
+    }
+.nav-location img{
+  width: 20px;
   
-    height: 100px;
-  grid-area: header;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  color: #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
-  background-color: #02010c;
+
 }
-.a-logo {
-    width: 100px;
-    height: 100px;
-}
-.search-bar {
-  margin-left: 200px;
-  display: flex;
-  width: 40%;
-}
-.search-bar .sbtn {
-background-color: rgb(242, 203, 126);
+   
+    .nav-location {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      color: #ccc;
+
+    }
+
+    .nav-location .bold-text {
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+   
+    .nav-search {
+      display: flex;
+      height: 40px;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .search-select {
+      background-color: #f3f3f3;
+      border: none;
+      padding: 0 10px;
+      font-size: 12px;
+      color: #555;
+      cursor: pointer;
+      border-right: 1px solid #ddd;
+    }
+
+    .search-input {
+      width: 100%;
+      border: none;
+      padding: 10px;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .search-button {
+      background-color: #ee9a69;
+      border: none;
+      display: flex;
+      width: 45px;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    
+    }
+
+    .search-button:hover {
+      background-color: #d97e0f;
+    }
+
+
+ .navbar a:hover  ,
+.nav-item:hover,
+.nav-location:hover,
+.nav-language:hover,
+.nav-cart:hover {
+  outline: 1px solid #ffffff; 
+  border-radius: 2px;       
+  cursor: pointer;
 }
 
-.header2{
-  background-color: #04141d;
-  color:white;
-}
-.header2 a{
-  padding: 10px;
-}
-.dh2 {
-    text-align: center;
+
+    .nav-language {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .flag-icon {
+      width: 18px;
+      height: auto;
+    }
+
+    .lang-text {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .arrow-down {
+      font-size: 9px;
+      color: #a7acb2;
+    }
+
+ 
+    .nav-item {
+      display: flex;
+      flex-direction: column;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .nav-item .line-2 {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .nav-cart {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .cart-count {
+      color: #f08804;
+      font-size: 16px;
+    }
+
+    .sub-navbar {
+      background-color: #232f3e;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+
+    .sub-navbar a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .sub-navbar a:hover {
+      border:2px solid #ccc;
+    }
+
+
+.dhero{ 
+  margin: 50px;
+  text-align: center;
 }
 .video-grid{
+
   display: grid;
   gap:10px;
   grid-template-columns: repeat(4,1fr);
 }
-.video{
-  width: 350px;
-  height: 300px;
-  background-color: rgb(178, 181, 184);
+
+
+.outer {
+  background-color: #e9eff1; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: space-between;
 }
+
+
+.outer h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+
+.inner {
+  width: 80%; 
+  height: 200px;
+  margin: 0 auto; 
+}
+
+.in1{
+  background-color: rgb(236, 196, 144);
+}
+
+
+.in2{
+  background-color: rgb(177, 90, 221);
+}
+
+.in3{
+  background-color: rgb(243, 112, 238);
+}
+
+.in4{
+  background-color: rgb(173, 66, 234);
+}
+
+
+
