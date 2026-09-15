@@ -7,7 +7,9 @@
     }
 
     body {
-      background-color: #c88bd7;
+      background-color: #e3b5ee;
+       
+    
     }
 
     
@@ -128,6 +130,14 @@
       color: #a7acb2;
     }
 
+ .hero{
+  height: 300px;
+
+ }
+  .hero img{
+  width: 100%;
+
+ }
  
     .nav-item {
       display: flex;
@@ -180,7 +190,6 @@
   text-align: center;
 }
 .video-grid{
-
   display: grid;
   gap:10px;
   grid-template-columns: repeat(4,1fr);
