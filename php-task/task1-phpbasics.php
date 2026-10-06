@@ -365,7 +365,7 @@ for ($i = 1; $i <= 5; $i++) {
         } else {
             echo "0 ";
         }
-    }
+    }}
     echo "\n"; 
     //29
     $number = 5;
