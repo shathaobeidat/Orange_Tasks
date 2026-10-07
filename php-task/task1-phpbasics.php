@@ -441,10 +441,7 @@ echo generatePassword($chars, 10);
 
 //38
 
-$sentence = 'That new trainee is so genius.';
-$replacement = 'Our';
-
-$result = preg_replace('/^\w+/', $replacement, $sentence);
-
+$text = 'That new trainee is so genius.';
+$result = str_replace('That', 'Our', $text);
 echo $result;
 
